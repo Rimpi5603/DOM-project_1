@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            background-color: rgb(86, 179, 179);
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+        <h1 id="display">Hello </h1>
+        <button onclick="displayText();">Java Script</button>
+        <button onclick="displayPython();">Click Python</button>
+        <button onclick="displayJs();">Click java</button>
+    </div>
+
+    <!--Script code......-->
+    <script>
+        function displayText()
+        {
+            let displayTag=document.getElementById('display');
+            displayTag.textContent='WE LOVE JAVA SCRIPT'
+            displayTag.style.color='blue'
+        }
+
+        function displayPython()
+        {
+            let displayTag=document.getElementById('display');
+            displayTag.textContent='WE LOVE PYTHON'
+            displayTag.style.color='rgb(235, 82, 97)'
+        }
+
+        function displayJs()
+        {
+            let displayTag=document.getElementById('display');
+            displayTag.textContent='WE LOVE JAVA'
+            displayTag.style.color='rgb(230, 11, 102)'
+        }
+
+
+    </script>
+    
+</body>
+</html>

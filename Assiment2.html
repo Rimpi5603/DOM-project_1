@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: rgb(190, 158, 219);
+            text-align: center;
+            color: rgb(138, 23, 23);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1 id="display"> Message....</h1>
+    <button onclick="displayText('Java','red')">Java </button>
+    <button onclick="displayText('Python','green')">Python</button>
+    <button onclick="displayText('JavaScript','yellow')">javaScript</button>
+
+</div>
+
+<script>
+    function displayText(text,col)
+    {
+        let displayTag2=document.getElementById('display')
+        displayTag2.textContent="I Love"+ " " + text;
+        displayTag2.style.color=col
+    }
+</script>
+
+
+
+    
+</body>
+</html>
